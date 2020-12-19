@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#eeeeee">
+
+    <view
+        android:id="@+id/youtube_view"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+
+    <LinearLayout
+        android:id="@+id/buttons_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/youtube_view"
+        android:layout_above="@+id/videos_list"
+        android:layout_marginBottom="30dp">
+        <Button
+            android:id="@+id/play_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/play"/>
+        <Button
+            android:id="@+id/pause_resume_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pause"/>
+        <Button
+            android:id="@+id/stop_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/videos_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+        <TextView
+            android:id="@+id/video_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unravel"
+            android:gravity="center"
+            android:textSize="24dp"/>
+        <TextView
+            android:id="@+id/video_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Therefore I Am"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/video_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I Can't Sleep"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/video_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Ride of the Rohirrim"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

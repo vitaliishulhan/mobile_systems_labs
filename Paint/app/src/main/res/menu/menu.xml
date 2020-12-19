@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/modeGroup"
+        android:checkableBehavior="single"
+        android:enabled="true">
+        <item
+            android:id="@+id/normalModeItem"
+            android:checked="true"
+            android:title="Normal Mode" />
+        <item
+            android:id="@+id/embossModeItem"
+            android:checked="false"
+            android:title="Emboss Mode" />
+        <item
+            android:id="@+id/blurModeItem"
+            android:title="Blur Mode" />
+    </group>
+    <item
+        android:id="@+id/clearAllItem"
+        android:title="Clear all" />
+    <item
+        android:id="@+id/changeColorItem"
+        android:title="Change color" />
+    <item
+        android:id="@+id/thicknessItem"
+        android:title="Thickness (5)" />
+    <item
+        android:id="@+id/eraserItem"
+        android:title="Eraser On" />
+</menu>
